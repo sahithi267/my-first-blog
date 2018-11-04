@@ -4,7 +4,7 @@ from .forms import PostForm
 from .models import Post
 def signin(request):
 	return signin
-
+//commmmm
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
